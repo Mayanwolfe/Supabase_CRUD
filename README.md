@@ -1,3 +1,19 @@
+# Getting Started with Supabase
+
+1. Go to https://supabase.com/ and create an account.
+2. Create a new project.
+3. Create a new table in your database using this statement in the Supabase SQL editor or manually using the table editor in the GUI.
+
+CREATE TABLE todos (
+  id SERIAL PRIMARY KEY,
+  task VARCHAR(255),
+  is_completed BOOLEAN
+);
+
+4. In Supabase, navigate to Project Settings -> API. Copy the project URL and the public anon API key. 
+5. In VSCode, use create-react-app to create your React app. (Don't forget to cd into the project.)
+6. Create a .env file at the root of the project and put your URL and API keys there. Look inside supabaseClient.js for the variable format.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
